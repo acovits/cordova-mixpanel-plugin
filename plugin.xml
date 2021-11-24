@@ -13,7 +13,7 @@
     <keywords>mixpanel, cordova, phonegap, ionic, plugin, ios, android</keywords>
 
     <js-module src="www/mixpanel.js" name="Mixpanel">
-        <clobbers target="mixpanel"/>
+        <clobbers target="cordova.plugins.mixpanel"/>
     </js-module>
 
 
