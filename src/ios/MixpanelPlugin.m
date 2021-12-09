@@ -110,7 +110,8 @@
     NSArray* arguments = command.arguments;
     NSString* token = [arguments objectAtIndex:0];
 
-    Mixpanel* mixpanelInstance = [Mixpanel sharedInstanceWithToken:token];
+    // Mixpanel* mixpanelInstance = [Mixpanel sharedInstanceWithToken:token];
+    Mixpanel* mixpanelInstance = [Mixpanel sharedInstanceWithToken:token launchOptions:nil trackCrashes:NO automaticPushTracking:NO optOutTrackingByDefault:NO];
     [mixpanelInstance setFlushInterval:60];
 
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
